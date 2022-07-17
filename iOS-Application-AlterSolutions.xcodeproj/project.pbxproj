@@ -10,11 +10,12 @@
 		E04F9D5B2884B7F300784C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D5A2884B7F300784C44 /* AppDelegate.swift */; };
 		E04F9D5D2884B7F300784C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D5C2884B7F300784C44 /* SceneDelegate.swift */; };
 		E04F9D5F2884B7F300784C44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D5E2884B7F300784C44 /* ViewController.swift */; };
-		E04F9D622884B7F300784C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04F9D602884B7F300784C44 /* Main.storyboard */; };
 		E04F9D642884B7F400784C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04F9D632884B7F400784C44 /* Assets.xcassets */; };
 		E04F9D672884B7F400784C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04F9D652884B7F400784C44 /* LaunchScreen.storyboard */; };
 		E04F9D722884B7F400784C44 /* iOS_Application_AlterSolutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D712884B7F400784C44 /* iOS_Application_AlterSolutionsTests.swift */; };
 		E04F9D7D2884B7F400784C44 /* iOS_Application_AlterSolutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D7C2884B7F400784C44 /* iOS_Application_AlterSolutionsUITests.swift */; };
+		E04F9D922884BA0200784C44 /* PokemonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D912884BA0200784C44 /* PokemonCollectionViewController.swift */; };
+		E04F9D942884C2EA00784C44 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F9D932884C2EA00784C44 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		E04F9D5A2884B7F300784C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04F9D5C2884B7F300784C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E04F9D5E2884B7F300784C44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E04F9D612884B7F300784C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E04F9D632884B7F400784C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04F9D662884B7F400784C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E04F9D682884B7F400784C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E04F9D782884B7F400784C44 /* iOS-Application-AlterSolutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Application-AlterSolutionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04F9D7C2884B7F400784C44 /* iOS_Application_AlterSolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Application_AlterSolutionsUITests.swift; sourceTree = "<group>"; };
 		E04F9D7E2884B7F400784C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04F9D912884BA0200784C44 /* PokemonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewController.swift; sourceTree = "<group>"; };
+		E04F9D932884C2EA00784C44 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,14 @@
 		E04F9D592884B7F300784C44 /* iOS-Application-AlterSolutions */ = {
 			isa = PBXGroup;
 			children = (
+				E04F9D8E2884B82A00784C44 /* Model */,
+				E04F9D8D2884B82400784C44 /* View */,
+				E04F9D8C2884B82100784C44 /* Controller */,
+				E04F9D8B2884B81C00784C44 /* Service */,
+				E04F9D8A2884B81400784C44 /* Extensions */,
 				E04F9D5A2884B7F300784C44 /* AppDelegate.swift */,
 				E04F9D5C2884B7F300784C44 /* SceneDelegate.swift */,
 				E04F9D5E2884B7F300784C44 /* ViewController.swift */,
-				E04F9D602884B7F300784C44 /* Main.storyboard */,
 				E04F9D632884B7F400784C44 /* Assets.xcassets */,
 				E04F9D652884B7F400784C44 /* LaunchScreen.storyboard */,
 				E04F9D682884B7F400784C44 /* Info.plist */,
@@ -126,6 +132,43 @@
 				E04F9D7E2884B7F400784C44 /* Info.plist */,
 			);
 			path = "iOS-Application-AlterSolutionsUITests";
+			sourceTree = "<group>";
+		};
+		E04F9D8A2884B81400784C44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E04F9D932884C2EA00784C44 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E04F9D8B2884B81C00784C44 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E04F9D8C2884B82100784C44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E04F9D912884BA0200784C44 /* PokemonCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E04F9D8D2884B82400784C44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E04F9D8E2884B82A00784C44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +277,6 @@
 			files = (
 				E04F9D672884B7F400784C44 /* LaunchScreen.storyboard in Resources */,
 				E04F9D642884B7F400784C44 /* Assets.xcassets in Resources */,
-				E04F9D622884B7F300784C44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04F9D942884C2EA00784C44 /* Extension.swift in Sources */,
+				E04F9D922884BA0200784C44 /* PokemonCollectionViewController.swift in Sources */,
 				E04F9D5F2884B7F300784C44 /* ViewController.swift in Sources */,
 				E04F9D5B2884B7F300784C44 /* AppDelegate.swift in Sources */,
 				E04F9D5D2884B7F300784C44 /* SceneDelegate.swift in Sources */,
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E04F9D602884B7F300784C44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E04F9D612884B7F300784C44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E04F9D652884B7F400784C44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,6 +476,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.iOS-Application-AlterSolutions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -457,6 +494,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.iOS-Application-AlterSolutions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
