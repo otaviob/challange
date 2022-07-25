@@ -2,7 +2,6 @@
 //  PokemonModel.swift
 //  iOS-Application-AlterSolutions
 //
-//  Created by Otavio Brito on 18/07/22.
 //  Copyright © 2022 Otavio Brito. All rights reserved.
 //
 
