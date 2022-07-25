@@ -15,7 +15,7 @@ class Service {
     
     func fetchPokemon(completion: @escaping ([Pokemon]) -> ()) {
         var pokemonArray = [Pokemon]()
-    
+        
         guard let url = URL(string: BASE_URL) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -40,14 +40,13 @@ class Service {
                             pokemon.image = image
                             pokemonArray.append(pokemon)
                             
-                            pokemonArray.sort(by: {  (poke1, poke2) -> Bool in
+                            pokemonArray.sort(by: { (poke1, poke2) -> Bool in
                                 return poke1.id! < poke2.id!
                             })
+                            
                             completion(pokemonArray)
                         })
- 
                     }
-                    completion(pokemonArray)
                 }
                 
             } catch let error {
@@ -57,14 +56,14 @@ class Service {
         }.resume()
     }
     
+    
     private func fetchImage(withUrlString urlString: String, completion: @escaping(UIImage) -> ()) {
-        
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             if let error = error {
-                print("Failed to create json with error: ", error.localizedDescription)
+                print("Failed to fetch image with error: ", error.localizedDescription)
                 return
             }
             
@@ -74,7 +73,4 @@ class Service {
             
         }.resume()
     }
-    
-    
 }
-
